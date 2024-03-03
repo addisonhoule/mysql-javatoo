@@ -15,7 +15,7 @@ CREATE TABLE project (
 	);
 	
 CREATE TABLE material (
-	material_id INT NOT NULL,
+	material_id INT AUTO_INCREMENT NOT NULL,
 	project_id INT NOT NULL,
 	material_name varchar(128) NOT NULL,
 	num_required INT,
@@ -25,7 +25,7 @@ CREATE TABLE material (
 	);
 	
 CREATE TABLE step (
-	step_id INT NOT NULL,
+	step_id INT AUTO_INCREMENT NOT NULL,
 	project_id INT NOT NULL,
 	step_text TEXT NOT NULL,
 	step_order INT NOT NULL,
